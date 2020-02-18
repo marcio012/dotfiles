@@ -169,7 +169,7 @@ else # macOS `ls`
 fi
 
 # use nvim, but don't make me think about it
-alias vim="nvim"
+# alias vim="nvim"
 
 # Filesystem aliases
 alias ..='cd ..'
@@ -190,6 +190,7 @@ alias du='du -h -c' # calculate disk usage for a folder
 
 # Applications
 alias ios='open -a /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+# TODO atalho para emulador Android
 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"

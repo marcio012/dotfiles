@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "schniz/tap"
+tap "homebrew/cask-fonts"
 
 brew "ack"
 brew "bat"
@@ -47,3 +48,4 @@ brew "zsh"
 
 cask "kitty"
 cask "imageoptim"
+cask "font-hack-nerd-font"
