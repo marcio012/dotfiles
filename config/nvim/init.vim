@@ -415,10 +415,12 @@ call plug#begin('~/.config/nvim/plugged')
         nmap <silent> <leader>n :call ToggleNerdTree()<cr>
         " find the current file in nerdtree without needing to reload the drawer
         nmap <silent> <leader>y :NERDTreeFind<cr>
+        
+        :map <F2> :NERDTreeToggle<CR>
 
         let NERDTreeShowHidden=1
-        " let NERDTreeDirArrowExpandable = '▷'
-        " let NERDTreeDirArrowCollapsible = '▼'
+        let NERDTreeDirArrowExpandable = '▷'
+        let NERDTreeDirArrowCollapsible = '▼'
         let g:NERDTreeIndicatorMapCustom = {
         \ "Modified"  : "✹",
         \ "Staged"    : "✚",
@@ -428,7 +430,6 @@ call plug#begin('~/.config/nvim/plugged')
         \ "Deleted"   : "✖",
         \ "Dirty"     : "✗",
         \ "Clean"     : "✔︎",
-        \ 'Ignored'   : '☒',
         \ "Unknown"   : "?"
         \ }
     " }}}

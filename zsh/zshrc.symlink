@@ -145,6 +145,10 @@ zplugin light zdharma/fast-syntax-highlighting
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Configutacao de cor tmux -> Background
+export TERM=screen-256color
+
+
 # React Native envariment
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
