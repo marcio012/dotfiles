@@ -639,6 +639,27 @@ call plug#begin('~/.config/nvim/plugged')
         nmap <leader>mq :MarkedQuit<cr>
         nmap <leader>* *<c-o>:%s///gn<cr>
     " }}}
+    
+    " markdown preview {{{
+        Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+
+        " Minimal configuration markdown preview
+        filetype plugin on
+  
+        "Uncomment to override defaults:
+        let g:instant_markdown_slow = 1
+        let g:instant_markdown_autostart = 0
+        let g:instant_markdown_open_to_the_world = 1
+        let g:instant_markdown_allow_unsafe_content = 1
+        let g:instant_markdown_allow_external_content = 0
+        let g:instant_markdown_mathjax = 1
+        let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
+        let g:instant_markdown_autoscroll = 0
+        let g:instant_markdown_port = 8888
+        let g:instant_markdown_python = 1
+    
+    " }}}
+    
 
     " JSON {{{
         Plug 'elzr/vim-json', { 'for': 'json' }
@@ -646,6 +667,7 @@ call plug#begin('~/.config/nvim/plugged')
     " }}}
 
     Plug 'ekalinin/Dockerfile.vim'
+
 " }}}
 
 call plug#end()
