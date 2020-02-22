@@ -163,16 +163,11 @@ eval "$(jenv init -)"
 # +----------------+
 # |  alias config  |
 # +----------------+
-alias cl='clear'
+source ~/.dotfiles/zsh/zsh-alias
 
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit -m'
-alias gpo='git push origin'
-alias gb='git branch'
-alias gcb='git checkout -b'
-alias gin='git init'
-alias gpul='git pull'
-alias gra='git remote add'
 
+# +----------------+
+# | config colors  |
+# +----------------+
+source ~/.dotfiles/zsh/zsh-colors
 
