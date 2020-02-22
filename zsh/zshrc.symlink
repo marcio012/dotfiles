@@ -169,5 +169,5 @@ source ~/.dotfiles/zsh/zsh-alias
 # +----------------+
 # | config colors  |
 # +----------------+
-source ~/.dotfiles/zsh/zsh-colors
+# source ~/.dotfiles/zsh/zsh-colors
 
